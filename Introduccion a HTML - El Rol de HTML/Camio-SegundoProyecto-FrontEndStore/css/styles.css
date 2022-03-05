@@ -1,0 +1,97 @@
+:root {
+ /*Paleta de Colores*/
+    --primario: #373737;
+    --secundario: #FFCE00;
+    --primarioOscuro: #0b6b6b;
+    --secundarioOscuro:  rgb(233, 287, 2);
+    --negro: #000;
+    --blanco: #fff;
+/*Fuentes*/
+    --fuentePrincipal: 'Staatliches', cursive;
+
+}
+
+/*Globales*/
+html {
+    font-size: 62.5%; /*es un pequeño hack para las dimensiones de la pagina*/
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+/*con esto se soluciona el espacio de mas que se agrega con un padding al trabajar con los contenidos, bordes, etc*/
+*, *:before, *:after{
+    /*el * significa 'todos' */
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto; /*para centrar el contenido*/
+}
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/*Header*/
+.header{
+    display: flex;
+    justify-content: center; /*para centrar el header*/
+}
+.header__logo{
+    margin: 3rem 0; /*para que tenga una separacion del logo*/
+}
+
+/*Footer*/
+.footer{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__texto{
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*Navegacion*/
+.navegacion{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /*separa los elementos para que tienda y nosotros no esten pegados, funciona con display flex*/
+}
+.navegacion__enlace{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+}
+.navegacion__enlace:hover,
+.navegacion__enlace--activo{
+    color: var(--secundario);
+}
