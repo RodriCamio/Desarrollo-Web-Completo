@@ -92,6 +92,45 @@
 
     <section> <!-- Nuestro formulario tambien va a estar en un section-->
         <h2>Contactos</h2>
+
+        <form>
+            <fieldset>
+                <legend>Contactame llenando todos los campos</legend> <!--usamos esta etiqueta para darle indicaciones a los usuarios en un formulario-->
+                <div> <!--Usamos div para estructurar los elementos que no podemos encerrar ni en el header, ni en el main, ni en ningun otro. Esta es como la ultima opcion-->
+                    <!--Label es etiqueta y en este caso este es para nombre-->
+                    <label>Nombre</label>
+                    <!--input es para ingresar datos, type "text" es el que viene por default, placeholder es para que tenga texto en el recuadro indicando el dato que esperamos-->
+                    <input type="text" placeholder="Tu nombre">
+                </div>
+
+                <div>
+                    <!--Este espacio es para telefono-->
+                    <label>Telefono</label>
+                    <!--el Type "tel" es para que en el teclado nos aparezcan los numeros mas facilmente y tambien tiene validacion osea no acepta letras-->
+                    <input type="tel" placeholder="Tu telefono">
+                </div>
+
+                <div>
+                    <!--Aca agregaos el mail-->
+                    <label>Email</label>
+                    <!--el type "email" tambien tiene validacion para que tenga formato de mail con un "@" por ejemplo-->
+                    <input type="email" placeholder="Tu email">
+                </div>
+
+                <div>
+                    <!--en este espacio va el mensaje-->
+                    <label>Mensaje</label>
+                    <!--Usamos textarea para que tengamos un area para el texto que se puede editar y es mayor a las anteriores-->
+                    <textarea></textarea>
+                </div>
+
+                <div>
+                    <!--Aca tenemos el boton para enviar, usamos el type "submit" es como un boton-->
+                    <input type="submit" placeholder="Enviar">
+                </div> <!--Poner todo dentro de sus respectivos div nos acomoda los campos de arriba hacia abajo.-->
+
+            </fieldset>
+        </form>
     </section>
     
     <footer> <!-- Finalmente terminamos con un footer-->
